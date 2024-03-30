@@ -4,15 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/burger"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805"
+        tools:layout_editor_absoluteX="16dp">
+
+        <Button
+            android:id="@+id/login_redirect"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/primary_button"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.04"
+            android:padding="10dp"
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textColor="#DBE7C9"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/sign_up_redirect"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/secondary_button"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.04"
+            android:padding="10dp"
+            android:text="@string/sign_up"
+            android:textAlignment="center"
+            android:textColor="#294B29"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
